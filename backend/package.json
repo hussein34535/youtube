@@ -1,0 +1,16 @@
+{
+  "name": "youtube-api-backend",
+  "version": "1.0.0",
+  "description": "API to fetch YouTube stream URLs for Hesen TV",
+  "main": "api/youtube.js",
+  "type": "module",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "vercel": "^32.3.0"
+  }
+}
