@@ -1,4 +1,4 @@
-import ytdl from 'ytdl-core';
+import ytdl from '@distube/ytdl-core';
 
 // Simple in-memory cache (optional, resets when function reloads)
 const cache = new Map();
