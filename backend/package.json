@@ -11,7 +11,7 @@
     "node": "20.x"
   },
   "dependencies": {
-    "@distube/ytdl-core": "latest"
+    "youtubei.js": "latest"
   },
   "devDependencies": {
     "vercel": "^32.3.0"
