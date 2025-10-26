@@ -8,7 +8,7 @@
     "start": "vercel dev"
   },
   "dependencies": {
-    "ytdl-core": "^4.11.5"
+    "ytdl-core": "latest"
   },
   "devDependencies": {
     "vercel": "^32.3.0"
