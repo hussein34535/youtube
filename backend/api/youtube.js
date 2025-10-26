@@ -42,7 +42,17 @@ export default async function handler(req, res) {
     // Fetch video info with timeout
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 10000); // 10 seconds max
-    const info = await ytdl.getInfo(url, { requestOptions: { signal: controller.signal } });
+    const info = await ytdl.getInfo(url, { 
+      requestOptions: { 
+        signal: controller.signal,
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          'Accept-Language': 'en-US,en;q=0.9',
+          'Referer': 'https://www.youtube.com/',
+        }
+      } 
+    });
     clearTimeout(timeout);
 
     const formats = info.formats
